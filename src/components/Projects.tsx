@@ -1,22 +1,27 @@
 "use client"
 
+import { useLanguage } from "@/contexts/LanguageContext"
+import { lang } from "@/lib/lang"
+
 export default function Projects() {
+  const { language } = useLanguage()
+
   const projects = [
     {
-      title: "Portfólio Pessoal",
-      description: "Site profissional responsivo com multilínguas, animações e foco em recrutadores.",
+      title: lang[language].projectsList[0].title,
+      description: lang[language].projectsList[0].description,
       techs: ["HTML", "CSS", "JavaScript", "Next.js", "TailwindCSS"],
       link: "https://luanmarquesdev.com.br/"
     },
     {
-      title: "Hairday",
-      description: "Agendamento simples para corte de cabelo.",
+      title: lang[language].projectsList[1].title,
+      description: lang[language].projectsList[1].description,
       techs: ["HTML", "CSS", "JavaScript"],
       link: "https://github.com/LuanMarques-Dev/hairday"
     },
     {
-      title: "Patins",
-      description: "Site simples para testar novas tecnologias do CSS.",
+      title: lang[language].projectsList[2].title,
+      description: lang[language].projectsList[2].description,
       techs: ["HTML", "CSS"],
       link: "https://github.com/LuanMarques-Dev/ld-patins"
     }
@@ -24,7 +29,7 @@ export default function Projects() {
 
   return (
     <div className="bg-black/20 border border-white/10 rounded-xl p-6">
-      <h2 className="text-lg font-semibold mb-4">Projetos Recentes</h2>
+      <h2 className="text-lg font-semibold mb-4">{lang[language].projects}</h2>
       <div className="space-y-4">
         {projects.map((project, index) => (
           <div key={`${project.title}-${index}`} className="border-l-2 border-zinc-600 pl-4">
@@ -38,9 +43,9 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-blue-400 hover:underline"
-              aria-label={`Ver projeto ${project.title}`}
+              aria-label={`${lang[language].seeProject} ${project.title}`}
             >
-              Ver projeto →
+              {lang[language].seeProject} →
             </a>
           </div>
         ))}

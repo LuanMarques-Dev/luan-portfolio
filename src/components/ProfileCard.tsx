@@ -10,7 +10,7 @@ export default function ProfileCard() {
     <div className="bg-gradient-to-br from-zinc-900 via-zinc-800 to-black border border-white/10 rounded-2xl p-8 flex flex-col items-center text-center shadow-xl">
       <Image
         src="/images/luan.jpeg"
-        alt="Luan Marques"
+        alt="Foto de Luan Marques"
         width={160}
         height={160}
         className="rounded-xl border-4 border-zinc-700"
@@ -32,10 +32,20 @@ export default function ProfileCard() {
       </a>
 
       <div className="flex gap-4 mt-4">
-        <a href="https://github.com/LuanMarques-Dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub">
+        <a
+          href="https://github.com/LuanMarques-Dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Perfil no GitHub"
+        >
           <Image src="/icons/github.svg" alt="GitHub" width={24} height={24} />
         </a>
-        <a href="https://www.linkedin.com/in/luan-marques-pereira-125852205/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn">
+        <a
+          href="https://www.linkedin.com/in/luan-marques-pereira-125852205/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Perfil no LinkedIn"
+        >
           <Image src="/icons/linkedin.svg" alt="LinkedIn" width={24} height={24} />
         </a>
       </div>

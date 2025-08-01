@@ -3,6 +3,7 @@ import Timeline from "@/components/Timeline"
 import FavoriteTools from "@/components/FavoriteTools"
 import Projects from "@/components/Projects"
 import MainProject from "@/components/MainProject"
+import LanguageSwitcher from "@/components/LanguageSwitcher"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <div className="md:col-span-1 space-y-6">
           <ProfileCard />
           <FavoriteTools />
+          <LanguageSwitcher />
         </div>
         <div className="md:col-span-2 space-y-6">
           <Timeline />
