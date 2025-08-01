@@ -1,4 +1,3 @@
-// components/ProfileCard.tsx
 'use client'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'

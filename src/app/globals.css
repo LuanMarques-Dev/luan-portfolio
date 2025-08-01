@@ -10,7 +10,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-geist-mono); /* Caso use o Geist */
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +27,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Animação de rolagem vertical infinita */
 @layer utilities {
   @keyframes scroll {
     0% {

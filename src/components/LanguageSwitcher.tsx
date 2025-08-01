@@ -1,4 +1,3 @@
-// components/LanguageSwitcher.tsx
 'use client'
 import { useLanguage } from '@/contexts/LanguageContext'
 

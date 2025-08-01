@@ -1,4 +1,3 @@
-// components/MainProject.tsx
 "use client"
 
 export default function MainProject() {

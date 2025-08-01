@@ -1,4 +1,3 @@
-// lib/lang.ts
 export const lang = {
   'pt-BR': {
     greeting: 'Desenvolvedor Full Stack em formação. Construindo com paixão, aprendendo com consistência.',

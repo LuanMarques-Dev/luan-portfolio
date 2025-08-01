@@ -1,4 +1,3 @@
-// components/FavoriteTools.tsx
 import { FaReact, FaNodeJs, FaGitAlt, FaLinux } from "react-icons/fa"
 import { SiTailwindcss, SiJavascript } from "react-icons/si"
 

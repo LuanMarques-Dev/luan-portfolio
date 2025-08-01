@@ -1,4 +1,3 @@
-// components/Timeline.tsx
 "use client"
 
 export default function Timeline() {

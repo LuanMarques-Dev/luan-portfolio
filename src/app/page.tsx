@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import ProfileCard from "@/components/ProfileCard"
 import Timeline from "@/components/Timeline"
 import FavoriteTools from "@/components/FavoriteTools"
