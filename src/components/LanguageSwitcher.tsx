@@ -1,7 +1,6 @@
 'use client'
 import { useLanguage } from '@/contexts/LanguageContext'
 
-// Declarar o tipo suportado aqui (ou importar do contexto, se já estiver lá)
 type SupportedLangs = 'pt-BR' | 'en-US' | 'ja-JP'
 
 export default function LanguageSwitcher() {
