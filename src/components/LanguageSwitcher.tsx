@@ -1,15 +1,18 @@
 'use client'
 import { useLanguage } from '@/contexts/LanguageContext'
 
+// Declarar o tipo suportado aqui (ou importar do contexto, se já estiver lá)
+type SupportedLangs = 'pt-BR' | 'en-US' | 'ja-JP'
+
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage()
 
   return (
     <div className="flex gap-2 mt-6 justify-center">
-      {['pt-BR', 'en-US', 'ja-JP'].map((lang) => (
+      {(['pt-BR', 'en-US', 'ja-JP'] as SupportedLangs[]).map((lang) => (
         <button
           key={lang}
-          onClick={() => setLanguage(lang as any)}
+          onClick={() => setLanguage(lang)}
           className={`px-3 py-1 text-sm rounded-lg ${
             language === lang
               ? 'bg-cyan-600 text-white'
